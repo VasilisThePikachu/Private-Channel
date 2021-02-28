@@ -50,6 +50,8 @@ class Bot(commands.Cog):
             await ctx.send(embed=myembed)
         else:
             await ctx.channel.set_permissions(user, read_messages=True, send_messages=True)
+            myembed = discord.Embed(title=":white_check_mark: Done!", description="They now have access", color=0x6136c2)
+            await ctx.send(embed=myembed)
 
     @commands.command()
     async def deluser(self, ctx, user: discord.User):
@@ -60,6 +62,8 @@ class Bot(commands.Cog):
             await ctx.send(embed=myembed)
         else:
             await ctx.channel.set_permissions(user, read_messages=False, send_messages=False)
+            myembed = discord.Embed(title=":white_check_mark: Done!", description="They now no longer have access", color=0x6136c2)
+            await ctx.send(embed=myembed)
 
 
 
