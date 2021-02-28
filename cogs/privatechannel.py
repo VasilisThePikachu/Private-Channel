@@ -10,7 +10,7 @@ class Bot(commands.Cog):
 
     # Commands
     @commands.command()
-    async def create(self, ctx, name, users):
+    async def create(self, ctx, name):
         guild = ctx.guild
         category = discord.utils.get(guild.categories, name='Private Channels')
         if category is None:  # If there's no category matching with the `name`
