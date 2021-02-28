@@ -45,7 +45,7 @@ class Bot(commands.Cog):
     async def adduser(self, ctx, user: discord.User):
         overwrite = ctx.channel.overwrites_for(ctx.author)
         if not overwrite.read_messages:
-            myembed = discord.Embed(title=":x: Error!", description="You dont have the permission to edit that channel",
+            myembed = discord.Embed(title=":x: Error!", description="You dont have the permission to edit this channel. Please run this command in your private channel",
                                     color=0x6136c2)
             await ctx.send(embed=myembed)
         else:
@@ -57,7 +57,7 @@ class Bot(commands.Cog):
     async def deluser(self, ctx, user: discord.User):
         overwrite = ctx.channel.overwrites_for(ctx.author)
         if not overwrite.read_messages:
-            myembed = discord.Embed(title=":x: Error!", description="You dont have the permission to edit that channel",
+            myembed = discord.Embed(title=":x: Error!", description="You dont have the permission to edit this channel. Please run this command in your private channel",
                                     color=0x6136c2)
             await ctx.send(embed=myembed)
         else:
