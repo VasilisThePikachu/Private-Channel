@@ -1,3 +1,6 @@
+# Archive notice
+Replacing this with the redbot cog here https://github.com/VasilisThePikachu/AvaliCogs/tree/master/privatechannel
+
 # Private-Channel
  A bot that helps you create private text channels in discord
 
